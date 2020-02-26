@@ -1,0 +1,12 @@
+apiVersion: skaffold/v2alpha4
+kind: Config
+metadata:
+  name: skaffold-demo
+build:
+  artifacts:
+  - image: gcr.io/niveus-research-project/skaffold-demo
+deploy:
+  kubectl:
+    manifests:
+    - k8s-deployment.yaml
+    - k8s-service.yaml

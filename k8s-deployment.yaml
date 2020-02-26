@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: skaffold-demo
+spec:
+    selector:
+      matchLabels:
+        app: skaffold-demo
+    template:
+      metadata:
+        labels:
+            app: skaffold-demo
+      spec:
+        containers:
+        - name: skaffold-demo
+          image: gcr.io/niveus-research-project/skaffold-demo
