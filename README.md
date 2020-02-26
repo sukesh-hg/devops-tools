@@ -7,7 +7,7 @@ Skaffold’s central command, skaffold dev, watches local source code for change
 PREREQUISITES: Docker Engine, Kubernetes Engine
 
 INSTALLATION: Connect to your Kubernetes or Minikube, install skaffold using below commands
-sudo wget https://storage.googleapis.com/skaffold/releases/latest/skaffold-linux-amd64  -O /usr/local/bin/skaffold
+sudo wget https://storage.googleapis.com/skaffold/releases/latest/skaffold-linux-amd64  -O /usr/local/bin/skaffold 
 chmod +x  /usr/local/bin/skaffold
 
 RUNNING SKAFFOLD: Use 'skaffold run' in CLI. 'skaffold dev' to enter into developement mode.
